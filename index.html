@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مرور جاوا اسکریپت</title>
+    <script src="1.js" type="text/JavaScript"></script>
+    <script src="jsFile.js" type="text/JavaScript"></script>
+    <link rel="stylesheet" href="css.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Arbutus' rel='stylesheet'>
+
+</head>
+
+<body>
+    <header id="header">
+        <nav id="nav">
+            <div id="time">
+                <p class="time"></p>
+                <p id="saat"></p>
+
+            </div>
+            <div id="logo"><img src="https://www.metal-archives.com/images/2/5/1/2/25123_logo.jpg?5555" alt="Uaral"></div>
+            <div id="navLinks">
+                <ul>
+                    <li>
+                        <a href="" class="nav-link" style="color: red;">Home</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link">Products</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link">Profile</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <section id="headImage">
+            <img src="images/2.jpg" onclick="chooseImage(2)" alt="aks" class="gallerypicture">
+            <img src="images/3.jpg" onclick="chooseImage(3)" alt="aks" class="gallerypicture">
+            <img src="images/4.jpg" onclick="chooseImage(4)" alt="aks" class="gallerypicture">
+
+        </section>
+        <div id="myImage"><img src="" id="showImage" alt="">
+            <h1 id="picCaption"></h1>
+        </div>
+        <button type="button" id="bgColorBtn" onclick="changeColor()">Change background</button>
+        <hr>
+        <div id="etebar">
+            <input type="text" id="inputText" placeholder="Put Number">
+            <button type="button" id="inputTest" onclick="testing()">Test</button>
+        </div>
+        <hr>
+        <img src="https://image.freepik.com/free-vector/danger-skull-logo-icon_43623-516.jpg" alt="logo" id="logoAnimate">
+        <img src="https://image.freepik.com/free-vector/danger-skull-logo-icon_43623-516.jpg" alt="logo" id="smallLogo">
+        <br>
+        <hr>
+        <section id="slideShow">
+            <img src="images/2.jpg" alt="aks1" class="slide-show1 slideshow">
+            <img src="images/3.jpg" alt="aks2" class="slide-show2 slideshow">
+            <img src="images/4.jpg" alt="aks3" class="slide-show3 slideshow">
+            <img src="images/5.jpg" alt="aks4" class="slide-show4 slideshow">
+            <img src="images/6.jpg" alt="aks5" class="slide-show5 slideshow">
+        </section>
+        <br>
+        <hr>
+        <br>
+        <section id="selling">
+            <h1 style="font-size: 35px;color: white;">Book Your Ticket Now!</h1>
+            <br>
+            <br>
+            <form action="ali.php" name="TicketSelling" method="post" id="ticketSelling">
+
+                <div id="sale">
+                    <div class="sale-div">
+                        <label for="metallica">
+                    <div class="saleLogo"><img src="https://blog.ticketmaster.com/wp-content/uploads/Met_OutsideHQ_0324_HQ_Herring__Herring3000-768x1024-1.jpg" alt="Metallica" title="Metallica"></div>
+                    <div class="saleCap">Metallica is an American heavy metal band. The band was formed in 1981 in Los Angeles by vocalist/guitarist James Hetfield and drummer Lars Ulrich, and has been based in San Francisco for most of its career.</div>
+                    <div><input type="radio" id="metallica" name="bands" value="metallica" onchange="changing()" ></div>
+                </div></label>
+                        <div class="sale-div">
+                            <label for="behemoth">
+                            <div class="saleLogo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/BehemothBAND.jpg/201px-BehemothBAND.jpg" alt="Behemoth" title="Behemoth"></div>
+                            <div class="saleCap">Behemoth is a Polish extreme metal band from Gdańsk, formed in 1991. They are considered to have played an important role in establishing the Polish extreme metal underground.</div>
+                            <div class="bookBtn"><input type="radio" id="behemoth" name="bands" value="behemoth"  onchange="changing()"></div>
+                        </div>
+                        <div class="sale-div">
+                            <label for="belphegor">
+                            <div class="saleLogo"><img src="https://www.therockpit.net/wp-content/uploads/2017/09/Belphegor-promo1.jpg" alt="Belphegor" title="Belphegor"></div>
+                            <div class="saleCap">Belphegor is an Austrian extreme metal band from Salzburg. They originally formed in 1991 under the name Betrayer before changing their name in 1993. They are named after the demon Belphegor; their music has accordingly been
+                                called "diabolic death metal".</div>
+                            <div class="bookBtn"><input type="radio" id="belphegor" name="bands" value="belphegor"  onchange="changing()"></div>
+                        </div>
+                        <input type="radio" id="makhfi" name="bands" checked>
+
+                    </div>
+                    <hr>
+                    <br>
+                    Number of tickets: <select name="ticketNO" id="ticketNO" onchange="changing()">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <br>
+                    <hr>
+                    Shipping: <select name="shipping" id="shipping" onchange="changing()">
+                        <option value="select" selected>Select</option>
+                        <option value="royalFirst">Royal Mail 24h</option>
+                        <option value="royalSecond">Royal Mail 48h</option>
+                        <option value="Hermes">Hermes</option>
+                        <option value="DHL">DHL</option>
+                    </select>
+                    <hr>
+                    <p id="finalPrice">Final price: $ </p>
+                    <br>
+                    <button type="submit" id="sellingSubmitBtn" value="unsubmit" onchange="changing()">BUY</button>
+                    
+            </form>
+        </section>
+        <br>
+        <hr>
+        <br>
+        <section id="toDo">
+            <h1>To DO List</h1>
+            <hr>
+            <button type="button" id="todoButton">Insert</button>
+            <input type="text" id="todoInput" placeholder="Please put a text and press Enter...">
+            <br>
+            <hr>
+            <br>
+            <ul id="todoUl"></ul>
+        </section>
+        <br>
+        <hr>
+        <div id="pluginsDiv">
+            <button id="pluginsBtn">Show Plugins</button>
+            <div class="plugins"></div>></div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <section id="gameSection">
+            <h1>< GAME ></h1>
+            <br>
+            <table id="gameTable">
+                <tr class="gameTr">
+                    <td class="gameTd" onclick="gaming(0)"> </td>
+                    <td class="gameTd"onclick="gaming(1)"> </td>
+                    <td class="gameTd"onclick="gaming(2)"> </td>
+                </tr>
+                <tr class="gameTr">
+                    <td class="gameTd"onclick="gaming(3)"> </td>
+                    <td class="gameTd"onclick="gaming(4)"> </td>
+                    <td class="gameTd"onclick="gaming(5)"> </td>
+                </tr>
+                <tr class="gameTr">
+                    <td class="gameTd"onclick="gaming(6)"> </td>
+                    <td class="gameTd"onclick="gaming(7)"> </td>
+                    <td class="gameTd"onclick="gaming(8)"> </td>
+                </tr>
+                <h2 id="gameResult"></h2>
+            </table>
+        </section>
+        <hr>
+        <br>
+        <section id="ads">
+            <h1>ADD!</h1>
+            <button type="button" id="adsBtn">Full AD</button>  
+            <button type="button" id="slideAddBtn">Slide AD</button>
+
+            <div id="addsBack">
+            <div id="adsDiv">
+                <h1>This is an ADD</h1>
+                <br>
+                <button type="button" id="hideAdds">Close</button>
+            </div></div>
+            <br>
+            <div id="slideAddDiv" style="width:50%;height: 402px;">
+            </div>
+            
+        </section>
+        <br>
+        <hr>
+        <section id="canvasSection">
+            <h1>< MY Own Job With CANVAS ></h1>
+            <br>
+            <canvas id="canvas" width="1200px" height="800px"></canvas>
+           <div id="chooseColors">
+               <ul>
+                   <li>First Color: <input id="firstCanvasColor" type="color"></li>
+                   <li>Second Color: <input id="secondCanvasColor" type="color"></li>
+                   <li>Third Color <input id="thirdCanvasColor" type="color"></li>
+                  <li> <button id="canvasRunBtn" type="button">RUN!</button></li>
+                  <li> <button  type="button" id="canvasClearBtn"></button></li>
+                </ul>
+            </div>
+        </section>
+        <br>
+        <hr>
+        <section id="movingBallsSection">
+            <h1>Moving Balls In CANVAS</h1>
+            <canvas id="movingBallsCanvas" width="400px" height="400px"></canvas>
+        </section>
+        <br>
+        <hr>
+        <section id="canvasAnimationSection">
+        <h1>Animation in Canvas</h1>
+            <canvas id="canvasAnimation" width="400px" height="400px"></canvas>
+        </section>
+        <br>
+        <hr>
+        <section id="canvasSlideshowSection">
+            <h1>Canvas Slide Show</h1>
+            <canvas id="canvasSlideshow" width="420" height="500px"></canvas>
+        </section>
+    
+    </main>
+
+   
+</body>
+
+
+</html>

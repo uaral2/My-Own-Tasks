@@ -1,0 +1,583 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: rgb(14, 13, 13);
+}
+
+nav {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    border: 4px solid rgba(255, 255, 0, 0.89);
+    border-radius: 70px 0px 90px 10px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: none;
+    top: 0;
+    z-index: 1;
+}
+
+main {
+    width: 100%;
+    text-align: center;
+}
+
+#headImage {
+    display: flex;
+    width: 96%;
+    justify-content: center;
+    margin-top: 115px;
+}
+
+#headImage img {
+    margin-right: 10px;
+}
+
+#showImage {
+    margin: 15px auto;
+    border-radius: 50%;
+    display: block;
+}
+
+#picCaption {
+    color: white;
+    font-size: 20px;
+}
+
+#bgColorBtn {
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: rgba(253, 82, 82, 0.678);
+    color: black;
+    padding: 20px;
+    font-size: 22px;
+}
+
+.toggle-color {
+    background: rgba(85, 0, 21, 0.801);
+}
+
+#navLinks {
+    margin-right: 10px;
+    margin-top: 20px;
+    width: 30%;
+}
+
+#headImage {
+    clear: both;
+}
+
+#navLinks ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 15px 4px;
+}
+
+#navLinks ul li a {
+    color: white;
+    font-size: 22px;
+    opacity: .1;
+}
+
+#logo {
+    margin: 0 auto;
+    width: 40%;
+}
+
+#logo img {
+    width: 200px;
+    height: 100px;
+}
+
+#time {
+    width: 30%;
+    margin-top: 40px;
+    text-align: left;
+    margin-left: 8px;
+}
+
+.time,
+#saat {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 18px;
+    font-family: 'arbutus';
+}
+
+#navLinks ul li a:hover {
+    background-color: rgba(219, 0, 0, 0.692);
+    color: black;
+}
+
+hr {
+    border: solid 1px rgba(51, 43, 43, 0.877);
+    width: 70%;
+    margin: 10px auto;
+    box-shadow: 0px 2px 4px rgb(219, 97, 97);
+}
+
+#inputTest,
+#inputText {
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: 0;
+}
+
+#inputTest {
+    background: rgb(153, 7, 7);
+}
+
+#inputTest:hover {
+    background: red;
+}
+
+#logoAnimate {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: red 2px 2px 15px 0px;
+}
+
+#smallLogo {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 120px;
+    left: 10px;
+    box-shadow: red 2px 2px 15px 0px;
+}
+
+#slideShow {
+    width: 80%;
+    position: relative;
+    height: 350px;
+}
+
+.slideshow {
+    position: absolute;
+    width: 250px;
+    height: 350px;
+}
+
+#sale {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#ticketSelling {
+    background-color: rgba(51, 43, 43, 0.308);
+    border: dashed 3px rgb(0, 192, 0);
+    border-radius: 40px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 22px;
+    color: white;
+}
+
+.sale-div {
+    width: 30%;
+    background: linear-gradient(black, gray);
+    border: solid 1px black;
+}
+
+.saleLogo {
+    width: 100%;
+    height: 250px;
+}
+
+.saleLogo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.saleCap {
+    width: 80%;
+    height: 150px;
+    margin: 0 auto;
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+    margin-top: 10px;
+    border-bottom: 2px solid rgb(155, 11, 11);
+    border-top: 2px solid rgb(155, 11, 11);
+    overflow: auto;
+}
+
+#belphegor,
+#metallica,
+#behemoth {
+    height: 40px;
+    width: 40px;
+}
+
+#shipping,
+#ticketNO {
+    font-size: 22px;
+    text-align: center;
+    margin-left: 15px;
+    padding: 5px 5px;
+    border: 3px solid rgb(0, 165, 0);
+    border-radius: 8px;
+    outline: 0;
+}
+
+#sellingSubmitBtn {
+    font-size: 22px;
+    background-color: rgb(0, 63, 0);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 1s;
+    margin-bottom: 20px;
+    color: white;
+    outline: 0;
+}
+
+#sellingSubmitBtn:hover {
+    background-color: rgb(9, 221, 9);
+    box-shadow: gray 4px 4px 8px;
+    width: 150px;
+    color: black;
+}
+
+#toDo {
+    width: 60%;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 3px dashed red;
+    text-align: center;
+    background: radial-gradient( rgb(78, 0, 78), black);
+    border-radius: 30px;
+}
+
+#toDo:hover {
+    background: radial-gradient( rgb(190, 14, 190), black);
+}
+
+#toDo h1 {
+    color: rgb(21, 219, 21);
+    font-size: 45px;
+    font-family: 'arbutus';
+    margin-top: 10px;
+}
+
+#todoInput,
+#todoButton {
+    padding: 10px;
+    font-size: 22px;
+    margin-right: 20px;
+    outline: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#todoInput {
+    width: 55%;
+    background: linear-gradient(90deg, rgb(216, 159, 168), rgb(147, 206, 226));
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.76);
+}
+
+#todoButton {
+    background: rgb(15, 45, 143);
+    display: none;
+}
+
+#todoButton:hover {
+    background: rgb(67, 107, 240);
+}
+
+#toDo ul {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#toDo ul li {
+    list-style: none;
+    margin-top: 10px;
+    color: black;
+    background: linear-gradient(90deg, rgb(117, 235, 137), rgb(194, 107, 179));
+    font-size: 28px;
+    padding: 10px;
+    border-radius: 0px 70px 0px 70px;
+    font-weight: 600;
+}
+
+.delete-btn {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    font-size: 30px;
+    padding: 2px 6px;
+    background: rgb(146, 1, 1);
+    border-radius: 0px 50%;
+    outline: 0;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: rgb(255, 0, 0);
+}
+
+#toDo ul li.todo-check-toggle {
+    background: rgba(4, 255, 4, 0.541);
+}
+
+#pluginsBtn {
+    font-size: 22px;
+    border: 8px outset rgb(255, 255, 255);
+    background: rgba(255, 0, 0, 0.5);
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    outline: 0;
+    transition: all 2s;
+}
+
+#pluginsBtn:hover {
+    border: 8px inset rgb(255, 255, 255);
+    border-radius: 50%;
+    background: rgb(255, 0, 0);
+}
+
+.plugins {
+    display: none;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    background: rgb(236, 21, 32);
+    width: 20%;
+    margin: 20px auto;
+    border: 4px outset white;
+}
+
+#gameSection h1 {
+    font-size: 45px;
+    font-family: 'arbutus';
+    color: white;
+    text-shadow: 0px 5px 8px red;
+    text-decoration: underline;
+}
+
+#gameTable {
+    width: 30%;
+    margin: 15px auto;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    border: 3px solid rgb(133, 0, 104);
+    border-collapse: collapse;
+    transition: background-color 2s;
+}
+
+#gameTable tr td {
+    border: 2px solid rgb(0, 93, 136);
+    width: 33.33%;
+    height: 80px;
+}
+
+#gameTable:hover {
+    background: radial-gradient(rgb(73, 26, 150), black 70%);
+    border-color: rgb(255, 0, 200);
+}
+
+#gameTable:hover tr td {
+    border: 2px solid rgb(0, 174, 255);
+}
+
+#gameSection h2 {
+    font-size: 30px;
+    color: white;
+    font-family: 'arbutus';
+    display: none;
+}
+
+#adsDiv {
+    width: 80%;
+    height: 50%;
+    margin: 100px auto;
+    background: rgba(240, 23, 59, 0.712);
+    color: black;
+    font-size: 32px;
+    font-family: 'arbutus';
+    border: 4px solid black;
+    border-radius: 40px;
+    z-index: 1001;
+}
+
+#addsBack {
+    width: 100%;
+    height: 1000px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1000;
+}
+
+#adsBtn {
+    font-size: 22px;
+    border: 8px outset rgb(255, 255, 255);
+    background: rgb(120, 129, 0);
+    color: black;
+    padding: 8px;
+    cursor: pointer;
+    outline: 0;
+    transition: 1s all;
+    border-radius: 20px;
+}
+
+#adsBtn:hover {
+    background: yellow;
+}
+
+#hideAdds {
+    font-size: 22px;
+    border: 8px outset rgb(255, 255, 255);
+    background: black;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    outline: 0;
+    transition: 1s all;
+    border-radius: 20px;
+    top: 50%;
+    position: relative;
+}
+
+#hideAdds:hover {
+    background: rgb(255, 0, 0);
+    color: black;
+}
+
+#slideAddBtn {
+    font-size: 22px;
+    border: 8px outset rgb(255, 255, 255);
+    background: rgb(120, 129, 0);
+    color: black;
+    padding: 8px;
+    cursor: pointer;
+    outline: 0;
+    transition: 1s all;
+    border-radius: 20px;
+}
+
+#slideAddBtn:hover {
+    background: red;
+}
+
+#ads h1 {
+    font-size: 50px;
+    color: white;
+    font-family: 'arbutus';
+}
+
+#slideAddDiv {
+    margin: 20px auto;
+    background: url("https://www.nme.com/wp-content/uploads/2019/08/nergal-696x442.jpg");
+}
+
+#canvas {
+    background: rgb(1, 151, 144);
+    border: 3px solid rgb(207, 0, 190);
+    border-radius: 40px;
+}
+
+#canvasSection h1 {
+    font-size: 50px;
+    color: red;
+    text-shadow: 4px 0px 6px gray;
+    font-family: 'arbutus';
+    text-decoration: underline;
+}
+
+#chooseColors ul li {
+    list-style: none;
+    font-size: 40px;
+    color: white;
+}
+
+#chooseColors ul {
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#chooseColors ul li input {
+    width: 30%;
+    height: 50%;
+}
+
+#canvasRunBtn {
+    font-size: 22px;
+    border: 3px dashed yellow;
+    background: rgba(255, 0, 149, 0.349);
+    color: rgb(255, 255, 255);
+    padding: 40px;
+    cursor: pointer;
+    outline: 0;
+    border-radius: 20%;
+    margin-left: 40px;
+}
+
+#canvasRunBtn:hover {
+    background: rgba(255, 0, 149, 0.863);
+    color: black;
+}
+
+#movingBallsCanvas {
+    background: rgb(73, 64, 64);
+}
+
+#movingBallsSection h1 {
+    font-size: 50px;
+    color: white;
+    font-family: 'arbutus';
+    margin: 20px auto;
+    text-shadow: 4px 0px 4px red;
+}
+
+#canvasAnimation {
+    background: rgb(237, 28, 36);
+}
+
+#canvasAnimationSection h1 {
+    font-size: 50px;
+    color: white;
+    font-family: 'arbutus';
+    margin: 20px auto;
+    text-shadow: 4px 0px 4px red;
+}
+
+#canvasSlideshowSection h1 {
+    font-size: 50px;
+    color: white;
+    font-family: 'arbutus';
+    margin: 20px auto;
+    text-shadow: 4px 0px 4px red;
+}
